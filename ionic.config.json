@@ -1,5 +1,7 @@
 {
   "name": "bmi_calculator",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "ionic-angular"
 }
