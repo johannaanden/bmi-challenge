@@ -8,4 +8,18 @@
 
 <ion-content padding>
 
+    <ion-slides (ionSlideDidChange)="slideChanged()">
+        <ion-slide>
+          <h1>Welcome to the BMI Calculator</h1>
+        </ion-slide>
+        <ion-slide>
+          <h1>Metric</h1>
+          <p>To calculate your BMI with cm and kg, press Metric in the calculator</p>
+        </ion-slide>
+        <ion-slide>
+          <h1>Imperial</h1>
+          <p>To calculate your BMI with lb and in, press Imperial in the calculator</p>
+        </ion-slide>
+      </ion-slides>
+
 </ion-content>
