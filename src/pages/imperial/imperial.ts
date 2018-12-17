@@ -13,12 +13,12 @@ export class ImperialPage {
   bmiValue: number;
   bmiMessage: string;
 
-  constructor(public navCtrl: NavController) {
+  constructor() {
   }
 
-  calculateImperialBMI() {
+  calculateBMI() {
     if (this.weight > 0 && this.height > 0) {
-      let finalBmi = this.weight / (this.height * this.height) / 703;
+      let finalBmi = this.weight / ((this.height * this.height) / 703);
       this.bmiValue = parseFloat(finalBmi.toFixed(2));
       this.setBMIMessage();
     }
